@@ -5,21 +5,21 @@ export default function NumberArr(){
 
     const numArr = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31];
 
-    const box_block = document.createElement("div");
-    box_block.classList.add("box_block");
-    document.querySelector("body").append(box_block);
+    const boxBlock = document.createElement("div");
+    boxBlock.classList.add("boxBlock");
+    document.querySelector("body").append(boxBlock);
     numArr.map((num) => {
         console.log(num);
         const box = document.createElement("div");
         box.classList.add("box");
         if(num % 2 == 0 ){
-        box.classList.add("box_green");
+        box.classList.add("boxGreen");
         }
 
         if(num % 2 != 0 ){
-            box.classList.add("box_yellow");
+            box.classList.add("boxYellow");
         }
             box.textContent  = num;
-            box_block.append(box);
+            boxBlock.append(box);
     })
 }

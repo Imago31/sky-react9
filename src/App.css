@@ -160,7 +160,7 @@ h4 {
   flex-direction: column;
   margin-top: 20px;
 }
-.box_block{
+.boxBlock{
   display: flex;
   width: 600px;
   flex-wrap: wrap;
@@ -168,22 +168,21 @@ h4 {
 .box{
   width: 50px;
   height: 50px;
-  /* background: orange; */
   color: #000;
   margin: 1px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.box_red{
+.boxRed{
   background: red;
 }
-.box_orange{
+.boxOrange{
   background: orange;
 }
-.box_green{
+.boxGreen{
   background: green;
 }
-.box_yellow{
+.boxYellow{
   background: yellow;
 }
