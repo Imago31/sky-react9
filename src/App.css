@@ -160,3 +160,29 @@ h4 {
   flex-direction: column;
   margin-top: 20px;
 }
+.boxBlock{
+  display: flex;
+  width: 600px;
+  flex-wrap: wrap;
+}
+.box{
+  width: 50px;
+  height: 50px;
+  color: #000;
+  margin: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boxRed{
+  background: red;
+}
+.boxOrange{
+  background: orange;
+}
+.boxGreen{
+  background: green;
+}
+.boxYellow{
+  background: yellow;
+}

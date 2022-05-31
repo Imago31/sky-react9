@@ -2,6 +2,9 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import MinMaxLazy from "./MinMaxLazyState";
 import CartTotal from "./CartTotal";
+import MapReduce from "./MapReduce"; 
+import NumberArr from "./NumberArr";  
+import PropTypes from "prop-types";
 
 function booksStub() {
   return [
@@ -84,6 +87,8 @@ export default function BookCart() {
         <h3>Total quantity:</h3>
       </div>
       <Link to="/about">About Shop</Link>
+      <MapReduce />
+      <NumberArr />
     </div>
   );
 }
@@ -97,3 +102,12 @@ const setquantity = (id, quantity) => {
 	newbooks[productInd] = newProduct;
 	setbooks(newbooks);
 } */
+
+
+booksStub.PropTypes = {
+  id: PropTypes.number,
+  price: PropTypes.number,
+  rest: PropTypes.number,
+  quantity: PropTypes.number,
+  title: PropTypes.string
+};
